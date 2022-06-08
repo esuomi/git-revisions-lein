@@ -8,7 +8,7 @@
 
   :eval-in-leiningen true
 
-  :dependencies []
+  :dependencies [[fi.polycode/git-revisions "1.1.0"]]
 
   :deploy-repositories [["clojars" {:sign-releases false
                                     :url           "https://clojars.org/repo"
