@@ -1,14 +1,14 @@
-(defproject fi.polycode/git-revisions "_"
+(defproject fi.polycode/lein-git-revisions "_"
   :description "Automatically control Leiningen project version based on Git metadata."
-  :url "https://github.com/esuomi/git-revisions"
+  :url "https://github.com/esuomi/git-revisions-lein"
   :license {:name "EPL-2.0 OR GPL-2.0-or-later WITH Classpath-exception-2.0"
             :url "https://www.eclipse.org/legal/epl-2.0/"}
 
-  :scm {:name "git" :url "https://github.com/esuomi/lein-git-revisions"}
+  :scm {:name "git" :url "https://github.com/esuomi/git-revisions"}
 
   :eval-in-leiningen true
 
-  :dependencies []
+  :dependencies [[fi.polycode/git-revisions "1.1.0"]]
 
   :deploy-repositories [["clojars" {:sign-releases false
                                     :url           "https://clojars.org/repo"
