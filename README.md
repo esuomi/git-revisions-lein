@@ -14,12 +14,12 @@ Automatically control Leiningen project version based on Git and system metadata
     ```
  2. **Add plugin definition to `project.clj`**
     ```clojure
-    (defproject foo "_"  ; replace project version string with underscore
+    (defproject foo/bar "_"  ; replace project version string with underscore
       ...
       ; add the plugin dependency
       :plugins [[fi.polycode/lein-git-revisions "LATEST"]
                 ...]
-      ; recommended default configuration
+      ; add recommended default configuration
       :git-revisions {:format        :semver
                       :adjust        [:env/revision_adjustment :minor]
                       :revision-file "resources/metadata.edn"}
