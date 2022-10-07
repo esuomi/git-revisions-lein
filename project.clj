@@ -21,7 +21,8 @@
             [lein-pprint "1.3.2"]]
 
   :profiles {:dev {:dependencies [[lambdaisland/kaocha "1.70.1086"]
-                                  [lambdaisland/kaocha-cloverage "1.0-45"]]}}
+                                  [lambdaisland/kaocha-cloverage "1.0-45"]
+                                  [lambdaisland/kaocha-junit-xml "1.16.98"]]}}
 
   :git-revisions {:format        :semver
                   :adjust        [:env/LEIN_REVISIONS_ADJUSTMENT :minor]
